@@ -6,7 +6,7 @@ MyDownloader from CodeProject http://www.codeproject.com/Articles/21053/MyDownlo
 
 ![MyDwnloader1](src/docs/MyDwnloader1.png)
 
-## Packages are available on Nuget
+## Features
 - Maintain nuget packages - TODO.
 - Fix large file size issues.
 - Set EndedWithError state when reaching max retries.
