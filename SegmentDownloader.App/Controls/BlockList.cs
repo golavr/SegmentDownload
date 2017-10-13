@@ -7,7 +7,7 @@ namespace SegmentDownloader.App.Controls
     [Serializable()]
     public class BlockList
     {
-        private int _length = 0;
+        private long _length = 0;
         private List<Block> _blockList;
 
         public BlockList()
@@ -31,7 +31,7 @@ namespace SegmentDownloader.App.Controls
         /// <summary>
         /// Change quantity of segments
         /// </summary>
-        public int Length
+        public long Length
         {
             get { return _length; }
             set
@@ -156,7 +156,7 @@ namespace SegmentDownloader.App.Controls
                 if (_blockList != null)
                     foreach (Block block in _blockList)
                         size += block.BlockSize;
-                _length = Convert.ToInt32(size);
+                _length = Convert.ToInt64(size);
             }
         }
     }

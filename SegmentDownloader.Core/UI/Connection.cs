@@ -40,11 +40,11 @@ namespace SegmentDownloader.Core.UI
             }
         }
 
-        public int MinSegmentSize
+        public long MinSegmentSize
         {
             get
             {
-                return (int)numMinSegSize.Value;
+                return (long)numMinSegSize.Value;
             }
         }
 

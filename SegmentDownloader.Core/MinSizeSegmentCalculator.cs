@@ -31,7 +31,7 @@ namespace SegmentDownloader.Core
                 }
                 else
                 {
-                    segments.Add(new CalculatedSegment(startPosition, startPosition + (int)segmentSize));
+                    segments.Add(new CalculatedSegment(startPosition, startPosition + segmentSize));
                 }
 
                 startPosition = segments[segments.Count - 1].EndPosition;

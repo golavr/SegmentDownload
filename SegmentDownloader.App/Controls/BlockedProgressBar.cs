@@ -42,7 +42,7 @@ namespace SegmentDownloader.App.Controls
         [Description("The length of segments of progress bar")]
         [Category("MyProgressBar")]
         [RefreshProperties(RefreshProperties.All)]
-        public int Length
+        public long Length
         {
             get { return _blockList.Length; }
             set { _blockList.Length = value; this.Refresh(); }
