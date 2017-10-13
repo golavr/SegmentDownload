@@ -154,7 +154,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Controls\BlockedProgressBar.bmp" />
     <Content Include="DONE.txt" />
-    <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyDownloader.Core\MyDownloader.Core.csproj">
