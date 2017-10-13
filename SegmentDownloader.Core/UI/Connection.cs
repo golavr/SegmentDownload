@@ -63,7 +63,7 @@ namespace SegmentDownloader.Core.UI
 
         private void UpdateControls()
         {
-            lblMinSize.Text = ByteFormatter.ToString((int)numMinSegSize.Value);
+            lblMinSize.Text = ByteFormatter.ToString((long)numMinSegSize.Value);
         }
     }
 }
