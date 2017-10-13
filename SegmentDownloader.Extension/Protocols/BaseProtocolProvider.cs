@@ -10,6 +10,8 @@ namespace SegmentDownloader.Extension.Protocols
 {
     public class BaseProtocolProvider
     {
+        public const int Timeout = 30000;
+
         static BaseProtocolProvider()
         {
             ServicePointManager.DefaultConnectionLimit = int.MaxValue;
@@ -18,7 +20,7 @@ namespace SegmentDownloader.Extension.Protocols
         protected WebRequest GetRequest(ResourceLocation location)
         {
             WebRequest request = WebRequest.Create(location.URL);
-            request.Timeout = 30000;
+            request.Timeout = Timeout;
             SetProxy(request);
             return request;
         }

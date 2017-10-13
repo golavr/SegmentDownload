@@ -56,6 +56,7 @@ namespace SegmentDownloader.Extension.Protocols
         public virtual Stream CreateStream(ResourceLocation rl, long initialPosition, long endPosition)
         {
             HttpWebRequest request = (HttpWebRequest)GetRequest(rl);
+            request.ReadWriteTimeout = Timeout;
 
             FillCredentials(request, rl);
 
@@ -79,6 +80,7 @@ namespace SegmentDownloader.Extension.Protocols
         public virtual RemoteFileInfo GetFileInfo(ResourceLocation rl, out Stream stream)
         {
             HttpWebRequest request = (HttpWebRequest)GetRequest(rl);
+            request.ReadWriteTimeout = Timeout;
 
             FillCredentials(request, rl);
 
