@@ -625,41 +625,38 @@ namespace SegmentDownloader.Core
             Stream stream;
             RemoteFileInfo newInfo;
 
-            try
+            do
             {
-                do
+                lastError = null;
+
+                SetState(DownloaderState.Preparing);
+
+                currentTry++;
+                try
                 {
-                    lastError = null;
+                    newInfo = defaultDownloadProvider.GetFileInfo(this.ResourceLocation, out stream);
 
-                    SetState(DownloaderState.Preparing);
-
-                    currentTry++;
-                    try
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    lastError = ex;
+                    if (currentTry < Settings.Default.MaxRetries)
                     {
-                        newInfo = defaultDownloadProvider.GetFileInfo(this.ResourceLocation, out stream);
-
-                        break;
+                        SetState(DownloaderState.WaitingForReconnect);
+                        Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.RetryDelay));
                     }
-                    catch (Exception ex)
+                    else
                     {
                         lastError = ex;
-                        if (currentTry < Settings.Default.MaxRetries)
-                        {
-                            SetState(DownloaderState.WaitingForReconnect);
-                            Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.RetryDelay));
-                        }
-                        else
-                        {
-                            return;
-                        }
+                        SetState(DownloaderState.EndedWithError);
+                        return;
                     }
                 }
-                while (true);
             }
-            finally
-            {
-                SetState(DownloaderState.Prepared);
-            }
+            while (true);
+
+            SetState(DownloaderState.Prepared);
 
             try
             {
