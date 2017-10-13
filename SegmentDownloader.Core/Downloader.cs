@@ -552,7 +552,8 @@ namespace SegmentDownloader.Core
                     }
                     else
                     {
-                        SetState(DownloaderState.NeedToPrepare);
+                        lastError = ex;
+                        SetState(DownloaderState.EndedWithError);
                         return;
                     }
                 }
