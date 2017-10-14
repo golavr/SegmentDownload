@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SegmentDownloader.Core</id>
+    <version>1.0.0</version>
+    <authors>Golan Avraham, Guilherme Labigalini</authors>
+    <owners>Golan Avraham</owners>
+    <licenseUrl>https://www.codeproject.com/info/cpol10.aspx</licenseUrl>
+    <projectUrl>https://github.com/golavr/SegmentDownloader</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Download manager supporting segmentation downloading with pause and resume. Segment downloader core component, require SegmentDownloader.Extension If you aren't implementing your own IProtocolProvider.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Download Downloader Segment</tags>
+  </metadata>
+  <files>
+    <file src="..\src\SegmentDownloader.Core\bin\Release\SegmentDownloader.Core.dll" target="lib\net40"></file>
+    <file src="..\src\SegmentDownloader.Core\bin\Release\SegmentDownloader.Core.dll.config" target="lib\net40"></file>
+  </files>
+</package>
