@@ -6,11 +6,10 @@ using System.Windows.Forms;
 using SegmentDownloader.App;
 using SegmentDownloader.App.UI;
 using SegmentDownloader.App.SingleInstancing;
-
+using SegmentDownloader.Common.UI;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Core;
 using SegmentDownloader.Core.Extensions;
-using SegmentDownloader.Core.UI;
-
 using SegmentDownloader.Extension;
 using SegmentDownloader.Extension.AntiVirus;
 using SegmentDownloader.Extension.Protocols;
@@ -20,6 +19,7 @@ using SegmentDownloader.Extension.AutoDownloads;
 using SegmentDownloader.Extension.SpeedLimit;
 using SegmentDownloader.Extension.PersistedList;
 using SegmentDownloader.Extension.WindowsIntegration;
+using SegmentDownloader.Protocol;
 
 namespace SegmentDownloader.App
 {

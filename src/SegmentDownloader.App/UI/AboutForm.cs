@@ -4,12 +4,13 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
-using SegmentDownloader.Core.UI;
 using SegmentDownloader.Core.Extensions;
 using System.Resources;
 using System.IO;
 using System.Globalization;
 using System.Diagnostics;
+using SegmentDownloader.Common.UI;
+using SegmentDownloader.Common.UI.Extensions;
 
 namespace SegmentDownloader.App.UI
 {

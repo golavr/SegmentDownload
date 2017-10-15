@@ -14,7 +14,7 @@ using SegmentDownloader.Extension.Video;
 using System.Web;
 using SegmentDownloader.Extension.AutoDownloads;
 using SegmentDownloader.App.Controls;
-using SegmentDownloader.Core.UI;
+using SegmentDownloader.Common.UI;
 using SegmentDownloader.Extension.WindowsIntegration.ClipboardMonitor;
 
 namespace SegmentDownloader.App.UI

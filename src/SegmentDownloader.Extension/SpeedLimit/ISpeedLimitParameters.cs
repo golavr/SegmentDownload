@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Core.Extensions;
 
 namespace SegmentDownloader.Extension.SpeedLimit

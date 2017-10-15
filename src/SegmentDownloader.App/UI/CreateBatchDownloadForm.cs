@@ -7,9 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
+using SegmentDownloader.Common.UI;
 using SegmentDownloader.Core;
 using SegmentDownloader.Core.Common;
-using SegmentDownloader.Core.UI;
 
 namespace SegmentDownloader.App.UI
 {

@@ -1,9 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using SegmentDownloader.Core.Extensions;
 using System.Windows.Forms;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Extension.Protocols.UI;
+using SegmentDownloader.Protocol;
 
 namespace SegmentDownloader.Extension.Protocols
 {

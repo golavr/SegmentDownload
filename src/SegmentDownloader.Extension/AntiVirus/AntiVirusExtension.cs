@@ -4,6 +4,7 @@ using System.Text;
 using SegmentDownloader.Core.Extensions;
 using System.IO;
 using System.Diagnostics;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Core;
 
 namespace SegmentDownloader.Extension.AntiVirus

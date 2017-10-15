@@ -89,23 +89,8 @@
       <DependentUpon>SoundChooser.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
-    <Compile Include="Protocols\BaseProtocolProvider.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Protocols\FtpProtocolProvider.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Protocols\HttpFtpProtocolExtension.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Protocols\HttpFtpProtocolParametersSettingsProxy.cs" />
-    <Compile Include="Protocols\HttpFtpProtocolUIExtension.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Protocols\HttpProtocolProvider.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Protocols\IHttpFtpProtocolParameters.cs" />
+    <Compile Include="Protocols\HttpFtpProtocolExtension.cs" />
+    <Compile Include="Protocols\HttpFtpProtocolUIExtension.cs" />
     <Compile Include="Zip\NoCloseSubStream.cs" />
     <Compile Include="Zip\PartialInputStream.cs" />
     <Compile Include="Zip\StreamHelper.cs" />
@@ -116,11 +101,6 @@
     </Compile>
     <Compile Include="Protocols\UI\Proxy.Designer.cs">
       <DependentUpon>Proxy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Protocols\Settings.Designer.cs">
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Zip\ZipProtocolProvider.cs" />
     <Compile Include="SpeedLimit\ISpeedLimitParameters.cs" />
@@ -243,9 +223,17 @@
     <Compile Include="WindowsIntegration\WindowsStartupUtility.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SegmentDownloader.Common.UI\SegmentDownloader.Common.UI.csproj">
+      <Project>{045B151F-A39B-46A0-AAFF-3E4F9611F086}</Project>
+      <Name>SegmentDownloader.Common.UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SegmentDownloader.Core\SegmentDownloader.Core.csproj">
       <Project>{E763345E-6696-4C53-8764-47E4ABD67DEF}</Project>
       <Name>SegmentDownloader.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj">
+      <Project>{d18a8b95-e5f9-410b-befa-581cc3ce7380}</Project>
+      <Name>SegmentDownloader.Protocol</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -259,10 +247,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="AutoDownloads\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Protocols\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>

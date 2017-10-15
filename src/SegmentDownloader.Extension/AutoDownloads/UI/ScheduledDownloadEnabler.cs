@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using SegmentDownloader.Core.UI;
+using SegmentDownloader.Common.UI;
 
 namespace SegmentDownloader.Extension.AutoDownloads.UI
 {

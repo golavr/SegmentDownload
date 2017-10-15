@@ -94,6 +94,10 @@
     <Compile Include="Web\WebSpiderResourceFactory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SegmentDownloader.Common.UI\SegmentDownloader.Common.UI.csproj">
+      <Project>{045B151F-A39B-46A0-AAFF-3E4F9611F086}</Project>
+      <Name>SegmentDownloader.Common.UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SegmentDownloader.Core\SegmentDownloader.Core.csproj">
       <Project>{E763345E-6696-4C53-8764-47E4ABD67DEF}</Project>
       <Name>SegmentDownloader.Core</Name>

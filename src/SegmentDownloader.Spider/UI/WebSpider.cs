@@ -5,10 +5,10 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
+using SegmentDownloader.Common.UI;
 using SegmentDownloader.Spider.Web.Rules;
 using SegmentDownloader.Core;
 using SegmentDownloader.Extension.AutoDownloads;
-using SegmentDownloader.Core.UI;
 using SegmentDownloader.Spider.Web;
 
 namespace SegmentDownloader.Spider.UI

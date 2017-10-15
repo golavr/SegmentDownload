@@ -7,6 +7,7 @@ using System.Threading;
 using System.Diagnostics;
 using Microsoft.Win32;
 using System.ComponentModel;
+using SegmentDownloader.Common.UI.Extensions;
 
 namespace SegmentDownloader.Extension.SpeedLimit
 {

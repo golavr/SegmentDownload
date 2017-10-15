@@ -1,4 +1,3 @@
-using SegmentDownloader.Core.UI;
 namespace SegmentDownloader.App.UI
 {
     partial class CreateBatchDownloadForm
@@ -46,8 +45,8 @@ namespace SegmentDownloader.App.UI
             this.label8 = new System.Windows.Forms.Label();
             this.numFrom = new System.Windows.Forms.NumericUpDown();
             this.numTo = new System.Windows.Forms.NumericUpDown();
-            this.folderBrowser1 = new SegmentDownloader.Core.UI.DownloadFolder();
-            this.location1 = new SegmentDownloader.App.UI.Location();
+            this.folderBrowser1 = new SegmentDownloader.Common.UI.DownloadFolder();
+            this.location1 = new SegmentDownloader.Common.UI.Location();
             this.scheduledDownloadEnabler1 = new SegmentDownloader.Extension.AutoDownloads.UI.ScheduledDownloadEnabler();
             ((System.ComponentModel.ISupportInitialize)(this.numSegments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWildcard)).BeginInit();
@@ -314,8 +313,8 @@ namespace SegmentDownloader.App.UI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numFrom;
         private System.Windows.Forms.NumericUpDown numTo;
-        private Location location1;
-        private DownloadFolder folderBrowser1;
+        private SegmentDownloader.Common.UI.Location location1;
+        private SegmentDownloader.Common.UI.DownloadFolder folderBrowser1;
         private SegmentDownloader.Extension.AutoDownloads.UI.ScheduledDownloadEnabler scheduledDownloadEnabler1;
 	}
 }
