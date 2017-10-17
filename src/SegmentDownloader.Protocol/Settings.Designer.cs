@@ -8,8 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SegmentDownloader.Protocol
-{
+namespace SegmentDownloader.Protocol {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
