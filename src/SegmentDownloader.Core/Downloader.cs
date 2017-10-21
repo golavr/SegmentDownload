@@ -545,10 +545,10 @@ namespace SegmentDownloader.Core
                 catch (Exception ex)
                 {
                     lastError = ex;
-                    if (currentTry < Settings.Default.MaxRetries)
+                    if (currentTry < Settings.Default.InitialMaxRetries)
                     {
                         SetState(DownloaderState.WaitingForReconnect);
-                        Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.RetryDelay));
+                        Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.InitialRetryDelay));
                     }
                     else
                     {
@@ -641,10 +641,10 @@ namespace SegmentDownloader.Core
                 catch (Exception ex)
                 {
                     lastError = ex;
-                    if (currentTry < Settings.Default.MaxRetries)
+                    if (currentTry < Settings.Default.InitialMaxRetries)
                     {
                         SetState(DownloaderState.WaitingForReconnect);
-                        Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.RetryDelay));
+                        Thread.Sleep(TimeSpan.FromSeconds(Settings.Default.InitialRetryDelay));
                     }
                     else
                     {
