@@ -157,6 +157,10 @@
     <Content Include="DONE.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SegmentDownloader.Common.UI\SegmentDownloader.Common.UI.csproj">
+      <Project>{045b151f-a39b-46a0-aaff-3e4f9611f086}</Project>
+      <Name>SegmentDownloader.Common.UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SegmentDownloader.Core\SegmentDownloader.Core.csproj">
       <Project>{E763345E-6696-4C53-8764-47E4ABD67DEF}</Project>
       <Name>SegmentDownloader.Core</Name>
@@ -164,6 +168,10 @@
     <ProjectReference Include="..\SegmentDownloader.Extension\SegmentDownloader.Extension.csproj">
       <Project>{FEA18B6C-491F-401A-A06B-AE47888FF288}</Project>
       <Name>SegmentDownloader.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj">
+      <Project>{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}</Project>
+      <Name>SegmentDownloader.Protocol</Name>
     </ProjectReference>
     <ProjectReference Include="..\SegmentDownloader.Spider\SegmentDownloader.Spider.csproj">
       <Project>{69C99442-953E-4559-96D3-C82CC57A3C87}</Project>

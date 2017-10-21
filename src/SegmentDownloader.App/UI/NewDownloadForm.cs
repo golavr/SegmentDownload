@@ -7,12 +7,12 @@ using System.Text;
 using System.Windows.Forms;
 using SegmentDownloader.Core.Common;
 using SegmentDownloader.Core;
-using SegmentDownloader.Core.UI;
 using SegmentDownloader.Extension.Protocols;
 using ICSharpCode.SharpZipLib.Zip;
 using SegmentDownloader.Extension.Zip;
 using System.IO;
 using System.Threading;
+using SegmentDownloader.Common.UI;
 
 namespace SegmentDownloader.App.UI
 {

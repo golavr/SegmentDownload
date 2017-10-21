@@ -5,6 +5,7 @@ using SegmentDownloader.Extension.Protocols;
 using SegmentDownloader.Core;
 using System.IO;
 using System.Net;
+using SegmentDownloader.Protocol;
 
 namespace SegmentDownloader.Extension.Video.Impl
 {

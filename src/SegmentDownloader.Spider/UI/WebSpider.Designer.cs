@@ -1,6 +1,3 @@
-using SegmentDownloader.Core.UI;
-using SegmentDownloader.App.UI;
-
 namespace SegmentDownloader.Spider.UI
 {
     partial class WebSpider
@@ -45,18 +42,18 @@ namespace SegmentDownloader.Spider.UI
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.chkResourcesFromExternal = new System.Windows.Forms.CheckBox();
             this.chkImagesFromExternal = new System.Windows.Forms.CheckBox();
-            this.location1 = new SegmentDownloader.App.UI.Location();
+            this.location1 = new SegmentDownloader.Common.UI.Location();
             this.numDownloadDepth = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.chkRemoveCompleted = new System.Windows.Forms.CheckBox();
-            this.folderBrowser1 = new SegmentDownloader.Core.UI.DownloadFolder();
+            this.folderBrowser1 = new SegmentDownloader.Common.UI.DownloadFolder();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtExcludeExt = new System.Windows.Forms.TextBox();
             this.chkExcludeExtensions = new System.Windows.Forms.CheckBox();
             this.txtExcludeNames = new System.Windows.Forms.TextBox();
             this.chkExcludeNames = new System.Windows.Forms.CheckBox();
             this.tmrRefresh = new System.Windows.Forms.Timer(this.components);
-            this.waitControl1 = new SegmentDownloader.Core.UI.WaitControl();
+            this.waitControl1 = new SegmentDownloader.Common.UI.WaitControl();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabParams.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -372,7 +369,7 @@ namespace SegmentDownloader.Spider.UI
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblTotalFiles;
         private System.Windows.Forms.Label label5;
-        private DownloadFolder folderBrowser1;
+        private SegmentDownloader.Common.UI.DownloadFolder folderBrowser1;
         private System.Windows.Forms.TabControl tabParams;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -385,10 +382,10 @@ namespace SegmentDownloader.Spider.UI
         private System.Windows.Forms.CheckBox chkExcludeExtensions;
         private System.Windows.Forms.Label lblDownloadedFiles;
         private System.Windows.Forms.ProgressBar progDownload;
-        private Location location1;
+        private SegmentDownloader.Common.UI.Location location1;
         private System.Windows.Forms.Timer tmrRefresh;
         private System.Windows.Forms.CheckBox chkResourcesFromExternal;
         private System.Windows.Forms.CheckBox chkImagesFromExternal;
-        private WaitControl waitControl1;
+        private SegmentDownloader.Common.UI.WaitControl waitControl1;
     }
 }

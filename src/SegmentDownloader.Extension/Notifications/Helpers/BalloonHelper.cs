@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using SegmentDownloader.Core;
-using SegmentDownloader.Core.UI;
 using System.Windows.Forms;
+using SegmentDownloader.Common.UI;
 
 namespace SegmentDownloader.Extension.Notifications.Helpers
 {

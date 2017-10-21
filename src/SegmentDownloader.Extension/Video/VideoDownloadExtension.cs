@@ -5,6 +5,7 @@ using SegmentDownloader.Core.Extensions;
 using SegmentDownloader.Core;
 using SegmentDownloader.Extension.Video.Impl;
 using System.Windows.Forms;
+using SegmentDownloader.Common.UI.Extensions;
 
 namespace SegmentDownloader.Extension.Video
 {

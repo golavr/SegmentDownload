@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SegmentDownloader.Core.Extensions;
 using System.Windows.Forms;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Extension.AutoDownloads.UI;
 
 namespace SegmentDownloader.Extension.AutoDownloads

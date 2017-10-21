@@ -10,9 +10,9 @@ using SegmentDownloader.Extension.Video;
 using System.Diagnostics;
 using System.IO;
 using SegmentDownloader.Core.Common;
-using SegmentDownloader.Core.UI;
 using SegmentDownloader.Extension.Video.Impl;
 using System.Threading;
+using SegmentDownloader.Common.UI;
 
 namespace SegmentDownloader.Extension.Video.UI
 {

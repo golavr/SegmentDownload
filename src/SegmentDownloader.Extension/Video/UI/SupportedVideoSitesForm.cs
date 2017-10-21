@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using SegmentDownloader.Extension.Video;
 using System.IO;
-using SegmentDownloader.Core.UI;
+using SegmentDownloader.Common.UI;
 
 namespace SegmentDownloader.Extension.Video.UI
 {

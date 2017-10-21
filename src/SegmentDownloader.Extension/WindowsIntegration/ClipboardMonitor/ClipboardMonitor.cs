@@ -6,7 +6,6 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using SegmentDownloader.Core;
-using SegmentDownloader.Core.UI;
 using System.Security.Permissions;
 using System.ComponentModel;
 

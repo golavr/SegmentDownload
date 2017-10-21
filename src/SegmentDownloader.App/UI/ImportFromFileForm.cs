@@ -8,8 +8,8 @@ using System.Windows.Forms;
 using SegmentDownloader.Core;
 using System.IO;
 using System.Text.RegularExpressions;
+using SegmentDownloader.Common.UI;
 using SegmentDownloader.Spider.Parsers.Html;
-using SegmentDownloader.Core.UI;
 
 namespace SegmentDownloader.App.UI
 {

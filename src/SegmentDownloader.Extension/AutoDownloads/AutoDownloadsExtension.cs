@@ -5,9 +5,10 @@ using SegmentDownloader.Core.Extensions;
 using SegmentDownloader.Core;
 using System.Threading;
 using SegmentDownloader.Extension.SpeedLimit;
-using SegmentDownloader.Core.UI;
 using System.Diagnostics;
 using System.ComponentModel;
+using SegmentDownloader.Common.UI;
+using SegmentDownloader.Common.UI.Extensions;
 
 namespace SegmentDownloader.Extension.AutoDownloads
 {

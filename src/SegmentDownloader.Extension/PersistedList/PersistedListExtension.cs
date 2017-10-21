@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Xml.Serialization;
 using SegmentDownloader.Core.Instrumentation;
 using System.Diagnostics;
+using SegmentDownloader.Common.UI.Extensions;
 
 namespace SegmentDownloader.Extension.PersistedList
 {

@@ -1,3 +1,4 @@
+
 namespace SegmentDownloader.App.UI
 {
     partial class ImportFromFileForm
@@ -38,8 +39,8 @@ namespace SegmentDownloader.App.UI
             this.rdoTextFile = new System.Windows.Forms.RadioButton();
             this.rdoHTML = new System.Windows.Forms.RadioButton();
             this.btnPreview = new System.Windows.Forms.Button();
-            this.location1 = new SegmentDownloader.App.UI.Location();
-            this.downloadFolder1 = new SegmentDownloader.Core.UI.DownloadFolder();
+            this.location1 = new SegmentDownloader.Common.UI.Location();
+            this.downloadFolder1 = new SegmentDownloader.Common.UI.DownloadFolder();
             this.scheduledDownloadEnabler1 = new SegmentDownloader.Extension.AutoDownloads.UI.ScheduledDownloadEnabler();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -207,12 +208,12 @@ namespace SegmentDownloader.App.UI
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private SegmentDownloader.Core.UI.DownloadFolder downloadFolder1;
+        private SegmentDownloader.Common.UI.DownloadFolder downloadFolder1;
         private SegmentDownloader.Extension.AutoDownloads.UI.ScheduledDownloadEnabler scheduledDownloadEnabler1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.RadioButton rdoTextFile;
         private System.Windows.Forms.RadioButton rdoHTML;
-        private Location location1;
+        private SegmentDownloader.Common.UI.Location location1;
     }
 }

@@ -9,5 +9,6 @@ MyDownloader from CodeProject http://www.codeproject.com/Articles/21053/MyDownlo
 ## Changes
 - Maintain nuget packages - TODO.
 - Fix large file size issues.
-- Set EndedWithError state when reaching max retries.
+- Decouple SegmentDownloader.Core from System.Windows.Forms and System.Drawing dependency - more lightweight and less depended packages.
 - Fix network failure during segments download - override default value of 5 minutes and set stream timeout value to 30 sec.
+- Set EndedWithError state when reaching max retries.

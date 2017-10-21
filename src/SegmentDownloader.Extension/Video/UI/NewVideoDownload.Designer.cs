@@ -40,8 +40,8 @@ namespace SegmentDownloader.Extension.Video.UI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSites = new System.Windows.Forms.LinkLabel();
             this.videoFormatCtrl1 = new SegmentDownloader.Extension.Video.UI.VideoFormatCtrl();
-            this.downloadFolder1 = new SegmentDownloader.Core.UI.DownloadFolder();
-            this.waitControl1 = new SegmentDownloader.Core.UI.WaitControl();
+            this.downloadFolder1 = new SegmentDownloader.Common.UI.DownloadFolder();
+            this.waitControl1 = new SegmentDownloader.Common.UI.WaitControl();
             ((System.ComponentModel.ISupportInitialize)(this.numSegments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -237,8 +237,8 @@ namespace SegmentDownloader.Extension.Video.UI
         private System.Windows.Forms.NumericUpDown numSegments;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel lblSites;
-        private VideoFormatCtrl videoFormatCtrl1;
-        private SegmentDownloader.Core.UI.DownloadFolder downloadFolder1;
-        private SegmentDownloader.Core.UI.WaitControl waitControl1;
+        private SegmentDownloader.Extension.Video.UI.VideoFormatCtrl videoFormatCtrl1;
+        private SegmentDownloader.Common.UI.DownloadFolder downloadFolder1;
+        private SegmentDownloader.Common.UI.WaitControl waitControl1;
     }
 }

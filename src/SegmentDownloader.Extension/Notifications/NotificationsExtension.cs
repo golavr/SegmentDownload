@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SegmentDownloader.Common.UI.Extensions;
 using SegmentDownloader.Core.Extensions;
 using SegmentDownloader.Core;
 using SegmentDownloader.Extension.Notifications.Helpers;

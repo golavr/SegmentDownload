@@ -1,4 +1,3 @@
-using SegmentDownloader.Core.UI;
 namespace SegmentDownloader.App.UI
 {
     partial class NewDownloadForm
@@ -38,14 +37,14 @@ namespace SegmentDownloader.App.UI
             this.pnlFileName = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtFilename = new System.Windows.Forms.TextBox();
-            this.folderBrowser1 = new SegmentDownloader.Core.UI.DownloadFolder();
+            this.folderBrowser1 = new SegmentDownloader.Common.UI.DownloadFolder();
             this.chkStartNow = new System.Windows.Forms.CheckBox();
             this.pnlSegments = new System.Windows.Forms.Panel();
             this.numSegments = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.locationMain = new SegmentDownloader.App.UI.Location();
+            this.locationMain = new SegmentDownloader.Common.UI.Location();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.locationAlternate = new SegmentDownloader.App.UI.Location();
+            this.locationAlternate = new SegmentDownloader.Common.UI.Location();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lvwLocations = new System.Windows.Forms.ListView();
@@ -53,7 +52,7 @@ namespace SegmentDownloader.App.UI
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.waitControl1 = new SegmentDownloader.Core.UI.WaitControl();
+            this.waitControl1 = new SegmentDownloader.Common.UI.WaitControl();
             this.backgroundWorkerRetriveZIPInformation = new System.ComponentModel.BackgroundWorker();
             this.checkableTreeView1 = new SegmentDownloader.App.Controls.CheckableTreeView();
             this.tabControl1.SuspendLayout();
@@ -369,14 +368,14 @@ namespace SegmentDownloader.App.UI
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
-        private Location locationMain;
-        private Location locationAlternate;
+        private SegmentDownloader.Common.UI.Location locationMain;
+        private SegmentDownloader.Common.UI.Location locationAlternate;
         private System.Windows.Forms.ListView lvwLocations;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private DownloadFolder folderBrowser1;
+        private SegmentDownloader.Common.UI.DownloadFolder folderBrowser1;
         private System.Windows.Forms.CheckBox chkChooseZIP;
         private System.Windows.Forms.FlowLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel pnlFileName;
@@ -387,7 +386,7 @@ namespace SegmentDownloader.App.UI
         private System.Windows.Forms.NumericUpDown numSegments;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox chkStartNow;
-        private WaitControl waitControl1;
+        private SegmentDownloader.Common.UI.WaitControl waitControl1;
         private System.ComponentModel.BackgroundWorker backgroundWorkerRetriveZIPInformation;
     }
 }
