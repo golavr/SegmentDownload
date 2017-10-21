@@ -41,9 +41,7 @@
   <ItemGroup>
     <Compile Include="BaseProtocolProvider.cs" />
     <Compile Include="FtpProtocolProvider.cs" />
-    <Compile Include="HttpFtpProtocolParametersSettingsProxy.cs" />
     <Compile Include="HttpProtocolProvider.cs" />
-    <Compile Include="IHttpFtpProtocolParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.settings</DependentUpon>
