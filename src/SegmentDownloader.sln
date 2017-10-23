@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.App", "SegmentDownloader.App\SegmentDownloader.App.csproj", "{18AE3994-8F48-49B1-AC63-342F70ED1135}"
 EndProject
@@ -17,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Common.UI", "SegmentDownloader.Common.UI\SegmentDownloader.Common.UI.csproj", "{045B151F-A39B-46A0-AAFF-3E4F9611F086}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Protocol", "SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj", "{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Sample", "SegmentDownloader.Sample\SegmentDownloader.Sample.csproj", "{07AA93B0-1D23-40C7-AD57-881D013D71CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,8 +58,15 @@ Global
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7AF0B7A-AA44-4591-B5DB-A8F47E34DA5A}
 	EndGlobalSection
 EndGlobal
