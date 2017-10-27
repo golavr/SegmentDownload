@@ -7,7 +7,9 @@ MyDownloader from CodeProject http://www.codeproject.com/Articles/21053/MyDownlo
 ![MyDwnloader1](src/docs/MyDwnloader1.png)
 
 ## Changes
-- Maintain nuget packages - TODO.
+- Maintain nuget packages
+  - [SegmentDownloader.Core](https://www.nuget.org/packages/SegmentDownloader.Core)
+  - [SegmentDownloader.Protocol](https://www.nuget.org/packages/SegmentDownloader.Protocol)
 - Fix large file size issues.
 - Decouple SegmentDownloader.Core from System.Windows.Forms and System.Drawing dependencies - more lightweight and less depended packages.
 - Fix network failure during segments download - override default value of 5 minutes and set stream timeout value to 30 sec.
