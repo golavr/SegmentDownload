@@ -8,9 +8,9 @@
     <licenseUrl>https://www.codeproject.com/info/cpol10.aspx</licenseUrl>
     <projectUrl>https://github.com/golavr/SegmentDownloader</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Download manager supporting segmented downloading with pause and resume. Segment downloader core component, require SegmentDownloader.Protocol if you aren't implementing your own IProtocolProvider.</description>
+    <description>Download manager supporting segmented downloading with pause and resume. SegmentDownloader.Protocol package is required if you aren't implementing your own IProtocolProvider.</description>
     <copyright>Copyright 2017</copyright>
-    <tags>Download Downloader Segment</tags>
+    <tags>Download Downloader Segment HTTP FTP</tags>
   </metadata>
   <files>
     <file src="..\src\SegmentDownloader.Core\bin\Release\SegmentDownloader.Core.dll" target="lib\net40"></file>

@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="BaseProtocolProvider.cs" />
     <Compile Include="FtpProtocolProvider.cs" />
     <Compile Include="HttpProtocolProvider.cs" />

@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Segment downloader protocol component, extension for SegmentDownloader.Core. Includes HTTP, FTP protocols. </description>
     <copyright>Copyright 2017</copyright>
-    <tags>Download Downloader Segment</tags>
+    <tags>Download Downloader Segment HTTP FTP</tags>
     <dependencies>
       <dependency id="SegmentDownloader.Core" version="1.0.0" />
     </dependencies>

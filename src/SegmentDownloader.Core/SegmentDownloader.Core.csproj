@@ -58,6 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="CalculatedSegment.cs" />
     <Compile Include="Common\BoolFormatter.cs" />
     <Compile Include="Common\ByteFormatter.cs" />
@@ -69,7 +72,6 @@
     <Compile Include="DownloaderState.cs" />
     <Compile Include="DownloadManager.cs" />
     <Compile Include="Extensions\IInitializable.cs" />
-    <Compile Include="GlobalAssemblyInfo.cs" />
     <Compile Include="IMirrorSelector.cs" />
     <Compile Include="Instrumentation\MyStopwatch.cs" />
     <Compile Include="IProtocolProvider.cs" />

@@ -63,6 +63,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AntiVirus\AntiVirusExtension.cs" />
     <Compile Include="AntiVirus\AntiVirusParametersSettingsProxy.cs" />
     <Compile Include="AntiVirus\UI\AVOptions.cs">
@@ -88,7 +91,6 @@
     <Compile Include="Notifications\UI\SoundChooser.Designer.cs">
       <DependentUpon>SoundChooser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Protocols\HttpFtpProtocolExtension.cs" />
     <Compile Include="Protocols\HttpFtpProtocolUIExtension.cs" />
     <Compile Include="Zip\NoCloseSubStream.cs" />

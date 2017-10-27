@@ -13,3 +13,4 @@ MyDownloader from CodeProject http://www.codeproject.com/Articles/21053/MyDownlo
 - Fix network failure during segments download - override default value of 5 minutes and set stream timeout value to 30 sec.
 - Set EndedWithError state when reaching max retries.
 - Add InitialRetryDelay and InitialMaxRetries settings - differentiate first info fetch from downloading phase which gives you error faster in case max retry/delay have high numbers.
+- Add [sample](https://github.com/golavr/SegmentDownloader/tree/dev/master/SegmentDownloader.Sample) console project.
