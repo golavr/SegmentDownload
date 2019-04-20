@@ -3,7 +3,7 @@
 [![Nuget downloads](https://img.shields.io/nuget/v/SegmentDownloader.Core.svg?label=SegmentDownloader.Core&logo=nuget&logoColor=white)](https://www.nuget.org/packages/SegmentDownloader.Core/)
 [![Nuget downloads](https://img.shields.io/nuget/v/SegmentDownloader.Protocol.svg?label=SegmentDownloader.Protocol&logo=nuget&logoColor=white)](https://www.nuget.org/packages/SegmentDownloader.Protocol/)
 
-![MyDwnloader1](src/docs/MyDwnloader1.png)
+![MyDwnloader1](docs/MyDwnloader1.png)
 
 ## Changes
 - Maintain nuget packages
