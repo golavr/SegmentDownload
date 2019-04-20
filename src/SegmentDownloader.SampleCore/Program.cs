@@ -7,7 +7,7 @@ using System.Threading;
 using SegmentDownloader.Core;
 using SegmentDownloader.Protocol;
 
-namespace SegmentDownloader.Sample
+namespace SegmentDownloader.SampleCore
 {
     class Program
     {
@@ -38,7 +38,7 @@ namespace SegmentDownloader.Sample
             downloader.SegmentStoped += SegmentChanged;
 
             _manualResetEventSlim = new ManualResetEventSlim();
-            
+
             // start download
             downloader.Start();
 

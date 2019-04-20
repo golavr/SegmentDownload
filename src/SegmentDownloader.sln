@@ -1,24 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.App", "SegmentDownloader.App\SegmentDownloader.App.csproj", "{18AE3994-8F48-49B1-AC63-342F70ED1135}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Core", "SegmentDownloader.Core\SegmentDownloader.Core.csproj", "{E763345E-6696-4C53-8764-47E4ABD67DEF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Extension", "SegmentDownloader.Extension\SegmentDownloader.Extension.csproj", "{FEA18B6C-491F-401A-A06B-AE47888FF288}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Tests", "SegmentDownloader.Tests\SegmentDownloader.Tests.csproj", "{3232779E-E9F4-4D70-9969-F435D98B1A8B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Spider", "SegmentDownloader.Spider\SegmentDownloader.Spider.csproj", "{69C99442-953E-4559-96D3-C82CC57A3C87}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.IEPlugin", "SegmentDownloader.IEPlugin\SegmentDownloader.IEPlugin.csproj", "{91BB212C-D158-4B83-A3BC-1A41BBDC8463}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Common.UI", "SegmentDownloader.Common.UI\SegmentDownloader.Common.UI.csproj", "{045B151F-A39B-46A0-AAFF-3E4F9611F086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SegmentDownloader.Core", "SegmentDownloader.Core\SegmentDownloader.Core.csproj", "{E763345E-6696-4C53-8764-47E4ABD67DEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Protocol", "SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj", "{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Sample", "SegmentDownloader.Sample\SegmentDownloader.Sample.csproj", "{07AA93B0-1D23-40C7-AD57-881D013D71CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.SampleCore", "SegmentDownloader.SampleCore\SegmentDownloader.SampleCore.csproj", "{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,34 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18AE3994-8F48-49B1-AC63-342F70ED1135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18AE3994-8F48-49B1-AC63-342F70ED1135}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18AE3994-8F48-49B1-AC63-342F70ED1135}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18AE3994-8F48-49B1-AC63-342F70ED1135}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E763345E-6696-4C53-8764-47E4ABD67DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E763345E-6696-4C53-8764-47E4ABD67DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E763345E-6696-4C53-8764-47E4ABD67DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E763345E-6696-4C53-8764-47E4ABD67DEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEA18B6C-491F-401A-A06B-AE47888FF288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEA18B6C-491F-401A-A06B-AE47888FF288}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEA18B6C-491F-401A-A06B-AE47888FF288}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEA18B6C-491F-401A-A06B-AE47888FF288}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3232779E-E9F4-4D70-9969-F435D98B1A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3232779E-E9F4-4D70-9969-F435D98B1A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3232779E-E9F4-4D70-9969-F435D98B1A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3232779E-E9F4-4D70-9969-F435D98B1A8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69C99442-953E-4559-96D3-C82CC57A3C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69C99442-953E-4559-96D3-C82CC57A3C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69C99442-953E-4559-96D3-C82CC57A3C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69C99442-953E-4559-96D3-C82CC57A3C87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91BB212C-D158-4B83-A3BC-1A41BBDC8463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91BB212C-D158-4B83-A3BC-1A41BBDC8463}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91BB212C-D158-4B83-A3BC-1A41BBDC8463}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91BB212C-D158-4B83-A3BC-1A41BBDC8463}.Release|Any CPU.Build.0 = Release|Any CPU
-		{045B151F-A39B-46A0-AAFF-3E4F9611F086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{045B151F-A39B-46A0-AAFF-3E4F9611F086}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{045B151F-A39B-46A0-AAFF-3E4F9611F086}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{045B151F-A39B-46A0-AAFF-3E4F9611F086}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -62,6 +28,10 @@ Global
 		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
