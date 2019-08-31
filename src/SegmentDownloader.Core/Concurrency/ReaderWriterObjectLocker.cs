@@ -31,7 +31,7 @@ namespace SegmentDownloader.Core.Concurrency
 
             public void Dispose()
             {
-                locker.locker.ExitReadLock();
+                locker.locker.ReleaseReaderLock();
             }
 
             #endregion
@@ -50,7 +50,7 @@ namespace SegmentDownloader.Core.Concurrency
 
             public void Dispose()
             {
-                locker.locker.ExitWriteLock();
+                locker.locker.ReleaseWriterLock();
             }
 
             #endregion
@@ -58,7 +58,7 @@ namespace SegmentDownloader.Core.Concurrency
         #endregion
 
         #region Fields
-        private ReaderWriterLockSlim locker;
+        private ReaderWriterLock locker;
         private IDisposable writerReleaser;
         private IDisposable readerReleaser; 
         #endregion
@@ -66,7 +66,8 @@ namespace SegmentDownloader.Core.Concurrency
         #region Constructor
         public ReaderWriterObjectLocker()
         {
-            locker = new ReaderWriterLockSlim();
+            // TODO: update to ReaderWriterLockSlim on .net 3.5
+            locker = new ReaderWriterLock();
 
             writerReleaser = new WriterReleaser(this);
             readerReleaser = new ReaderReleaser(this);
@@ -76,14 +77,14 @@ namespace SegmentDownloader.Core.Concurrency
         #region Methods
         public IDisposable LockForRead()
         {
-            locker.EnterReadLock();
+            locker.AcquireReaderLock(-1);
 
             return readerReleaser;
         }
 
         public IDisposable LockForWrite()
         {
-            locker.EnterWriteLock();
+            locker.AcquireWriterLock(-1);
 
             return writerReleaser;
         } 

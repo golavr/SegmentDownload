@@ -408,8 +408,7 @@ namespace SegmentDownloader.Core
             {
                 if (mainThread != null && mainThread.IsAlive)
                 {
-                    //mainThread.Join(TimeSpan.FromSeconds(1));
-                    mainThread.Join(1000);
+                    mainThread.Join(TimeSpan.FromSeconds(1));
                 }
             }
 
@@ -538,11 +537,11 @@ namespace SegmentDownloader.Core
                     remoteFileInfo = defaultDownloadProvider.GetFileInfo(this.ResourceLocation, out inputStream);
                     break;
                 }
-                //catch (ThreadAbortException)
-                //{
-                //    SetState(DownloaderState.NeedToPrepare);
-                //    return;
-                //}
+                catch (ThreadAbortException)
+                {
+                    SetState(DownloaderState.NeedToPrepare);
+                    return;
+                }
                 catch (Exception ex)
                 {
                     lastError = ex;
@@ -566,10 +565,10 @@ namespace SegmentDownloader.Core
                 lastError = null;
                 StartSegments(segmentCount, inputStream);
             }
-            //catch (ThreadAbortException)
-            //{
-            //    throw;
-            //}
+            catch (ThreadAbortException)
+            {
+                throw;
+            }
             catch (Exception ex)
             {
                 lastError = ex;
@@ -679,10 +678,10 @@ namespace SegmentDownloader.Core
                     RunSegments();
                 }
             }
-            //catch (ThreadAbortException)
-            //{
-            //    throw;
-            //}
+            catch (ThreadAbortException)
+            {
+                throw;
+            }
             catch (Exception ex)
             {
                 lastError = ex;
