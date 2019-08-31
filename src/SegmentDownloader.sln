@@ -4,11 +4,15 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SegmentDownloader.Core", "SegmentDownloader.Core\SegmentDownloader.Core.csproj", "{E763345E-6696-4C53-8764-47E4ABD67DEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Protocol", "SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj", "{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SegmentDownloader.Protocol", "SegmentDownloader.Protocol\SegmentDownloader.Protocol.csproj", "{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.Sample", "SegmentDownloader.Sample\SegmentDownloader.Sample.csproj", "{07AA93B0-1D23-40C7-AD57-881D013D71CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SegmentDownloader.SampleNetStandard", "SegmentDownloader.SampleNetStandard\SegmentDownloader.SampleNetStandard.csproj", "{2C984757-5003-48AA-BBF6-A63190624A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.SampleCore", "SegmentDownloader.SampleCore\SegmentDownloader.SampleCore.csproj", "{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{F3F65C34-5197-4D5E-9541-10C5F73EC6E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SegmentDownloader.SampleNetCore", "SegmentDownloader.SampleNetCore\SegmentDownloader.SampleNetCore.csproj", "{A62E6678-AA13-4F69-9611-11E2EC7BA522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentDownloader.SampleNet", "SegmentDownloader.SampleNet\SegmentDownloader.SampleNet.csproj", "{5F7C01DC-FD43-4F8D-9891-A1922FFFF335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,17 +28,26 @@ Global
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18A8B95-E5F9-410B-BEFA-581CC3CE7380}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07AA93B0-1D23-40C7-AD57-881D013D71CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1BDD3FD1-C7DF-4B07-826B-0C44B0F04000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C984757-5003-48AA-BBF6-A63190624A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C984757-5003-48AA-BBF6-A63190624A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C984757-5003-48AA-BBF6-A63190624A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C984757-5003-48AA-BBF6-A63190624A25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62E6678-AA13-4F69-9611-11E2EC7BA522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62E6678-AA13-4F69-9611-11E2EC7BA522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62E6678-AA13-4F69-9611-11E2EC7BA522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62E6678-AA13-4F69-9611-11E2EC7BA522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7C01DC-FD43-4F8D-9891-A1922FFFF335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7C01DC-FD43-4F8D-9891-A1922FFFF335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7C01DC-FD43-4F8D-9891-A1922FFFF335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7C01DC-FD43-4F8D-9891-A1922FFFF335}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C984757-5003-48AA-BBF6-A63190624A25} = {F3F65C34-5197-4D5E-9541-10C5F73EC6E1}
+		{A62E6678-AA13-4F69-9611-11E2EC7BA522} = {F3F65C34-5197-4D5E-9541-10C5F73EC6E1}
+		{5F7C01DC-FD43-4F8D-9891-A1922FFFF335} = {F3F65C34-5197-4D5E-9541-10C5F73EC6E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7AF0B7A-AA44-4591-B5DB-A8F47E34DA5A}

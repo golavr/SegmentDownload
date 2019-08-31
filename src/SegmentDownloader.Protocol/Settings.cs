@@ -1,9 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 
 namespace SegmentDownloader.Protocol {
     
     public sealed class Settings
-    { 
+    {
+        private const string ConfigFile = "appsettings.json";
+
         private static readonly Settings DefaultInstance;
 
         public static Settings Default => DefaultInstance;
@@ -25,10 +28,14 @@ namespace SegmentDownloader.Protocol {
         static Settings()
         {
             var configurationBuilder = new ConfigurationBuilder();
-            configurationBuilder.AddJsonFile("appsettings.json");
+            configurationBuilder.AddJsonFile(ConfigFile);
             var configuration = configurationBuilder.Build();
             var configurationSection = configuration.GetSection(nameof(Protocol));
             DefaultInstance = configurationSection.Get<Settings>();
+            if (DefaultInstance == null)
+            {
+                throw new JsonReaderException($"Missing {nameof(Protocol)} section in {ConfigFile} file");
+            }
         }
     }
 }

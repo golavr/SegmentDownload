@@ -1,6 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net472</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0</Version>
+    <Authors>Golan Avraham</Authors>
+    <Description>Segment downloader protocol component, extension for SegmentDownloader.Core. Includes HTTP, FTP protocols.</Description>
+    <Copyright>Copyright 2017</Copyright>
+    <RepositoryUrl>https://github.com/golavr/SegmentDownload</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Download Downloader Segment HTTP FTP</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -14,7 +24,7 @@
     <ProjectReference Include="..\SegmentDownloader.Core\SegmentDownloader.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="appsettings.json">
+    <None Include="appsettings.json" Pack="true" PackageCopyToOutput="true">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
